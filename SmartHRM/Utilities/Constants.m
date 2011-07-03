@@ -1,0 +1,20 @@
+//
+//  Constants.m
+//  SmartHRM
+//
+//  Created by Nabi on 7/3/11.
+//  Copyright 2011 Rus Wizards LLC. All rights reserved.
+//
+
+NSString * const SETTINGS_UNITS = @"SETTINGS_UNITS";
+NSString * const SETTINGS_FREQUENCY = @"SETTINGS_FREQUENCY";
+NSString * const SETTINGS_WEIGHT = @"SETTINGS_WEIGHT";
+NSString * const SETTINGS_AGE = @"SETTINGS_AGE";
+NSString * const SETTINGS_ACC_LOGIN = @"SETTINGS_ACC_LOGIN";
+NSString * const SETTINGS_ACC_PASSWORD = @"SETTINGS_ACC_PASSWORD";
+NSString * const SETTINGS_USE_FB = @"SETTINGS_USE_FB";
+NSString * const SETTINGS_UPLOAD_LOGS = @"SETTINGS_UPLOAD_LOGS";
+NSString * const SETTINGS_WAKE_LOCK = @"SETTINGS_WAKE_LOCK";
+NSString * const SETTINGS_ALERT_VERSIONS = @"SETTINGS_ALERT_VERSIONS";
+NSString * const SETTINGS_SHOW_WIZARD = @"SETTINGS_SHOW_WIZARD";
+NSString * const SETTING_USE_HRM = @"SETTING_USE_HRM";

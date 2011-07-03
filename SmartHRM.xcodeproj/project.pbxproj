@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2426CC1D13BCA22700BE30A4 /* WizardScreenSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426CC1C13BCA22700BE30A4 /* WizardScreenSuper.m */; };
+		2426CC2113BCA88200BE30A4 /* WizardScreenAge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426CC1F13BCA88200BE30A4 /* WizardScreenAge.m */; };
+		2426CC2213BCA88200BE30A4 /* WizardScreenAge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CC2013BCA88200BE30A4 /* WizardScreenAge.xib */; };
+		2426CC2613BCAADA00BE30A4 /* WizardScreenHrm.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426CC2413BCAAD900BE30A4 /* WizardScreenHrm.m */; };
+		2426CC2713BCAADA00BE30A4 /* WizardScreenHrm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CC2513BCAADA00BE30A4 /* WizardScreenHrm.xib */; };
+		24338DE213C0B4F100325704 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 24338DE113C0B4F100325704 /* Helpers.m */; };
+		24338DE813C0B54000325704 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 24338DE713C0B54000325704 /* Constants.m */; };
+		24338DF213C10F5000325704 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DF113C10F5000325704 /* man.png */; };
+		24338DF413C10F6400325704 /* man@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DF313C10F6400325704 /* man@2x.png */; };
+		24338DF613C10FAC00325704 /* preferences@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DF513C10FAC00325704 /* preferences@2x.png */; };
+		24338DF813C10FBA00325704 /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DF713C10FBA00325704 /* preferences.png */; };
+		24338DFA13C10FDE00325704 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DF913C10FDE00325704 /* delete.png */; };
+		24338DFC13C10FEE00325704 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DFB13C10FEE00325704 /* delete@2x.png */; };
+		24338DFE13C1101600325704 /* arrowup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DFD13C1101600325704 /* arrowup@2x.png */; };
+		24338E0113C1102200325704 /* arrowleft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338DFF13C1102200325704 /* arrowleft@2x.png */; };
+		24338E0213C1102200325704 /* arrowright@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0013C1102200325704 /* arrowright@2x.png */; };
+		24338E0613C1104C00325704 /* arrowleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0313C1104C00325704 /* arrowleft.png */; };
+		24338E0713C1104C00325704 /* arrowright.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0413C1104C00325704 /* arrowright.png */; };
+		24338E0813C1104C00325704 /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0513C1104C00325704 /* arrowup.png */; };
+		24338E0A13C1112200325704 /* world@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0913C1112200325704 /* world@2x.png */; };
+		24338E0C13C1112D00325704 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0B13C1112D00325704 /* world.png */; };
+		24338E0E13C1119100325704 /* record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0D13C1119100325704 /* record@2x.png */; };
+		24338E1013C111A200325704 /* pencilangled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E0F13C111A200325704 /* pencilangled@2x.png */; };
+		24338E1213C111AF00325704 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1113C111AF00325704 /* record.png */; };
+		24338E1413C111BA00325704 /* pencilangled.png in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1313C111BA00325704 /* pencilangled.png */; };
+		24338E1A13C1183D00325704 /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 24338E1813C1183D00325704 /* MainScreen.m */; };
+		24338E1B13C1183D00325704 /* MainScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1913C1183D00325704 /* MainScreen.xib */; };
+		24338E1F13C11FAF00325704 /* ShareScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 24338E1D13C11FAF00325704 /* ShareScreen.m */; };
+		24338E2013C11FAF00325704 /* ShareScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1E13C11FAF00325704 /* ShareScreen.xib */; };
+		248FF78313BAE8720096547E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78213BAE8720096547E /* UIKit.framework */; };
+		248FF78513BAE8720096547E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78413BAE8720096547E /* Foundation.framework */; };
+		248FF78713BAE8720096547E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78613BAE8720096547E /* CoreGraphics.framework */; };
+		248FF78913BAE8720096547E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78813BAE8720096547E /* CoreData.framework */; };
+		248FF78F13BAE8720096547E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248FF78D13BAE8720096547E /* InfoPlist.strings */; };
+		248FF79213BAE8720096547E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF79113BAE8720096547E /* main.m */; };
+		248FF79513BAE8720096547E /* SmartHRMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF79413BAE8720096547E /* SmartHRMAppDelegate.m */; };
+		248FF79813BAE8720096547E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FF79613BAE8720096547E /* MainWindow.xib */; };
+		248FF79B13BAE8720096547E /* SmartHRM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 248FF79913BAE8720096547E /* SmartHRM.xcdatamodeld */; };
+		248FF7A213BAE8720096547E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78213BAE8720096547E /* UIKit.framework */; };
+		248FF7A313BAE8720096547E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78413BAE8720096547E /* Foundation.framework */; };
+		248FF7A413BAE8720096547E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78613BAE8720096547E /* CoreGraphics.framework */; };
+		248FF7A513BAE8720096547E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78813BAE8720096547E /* CoreData.framework */; };
+		248FF7AD13BAE8720096547E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248FF7AB13BAE8720096547E /* InfoPlist.strings */; };
+		248FF7B013BAE8730096547E /* SmartHRMTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 248FF7AF13BAE8730096547E /* SmartHRMTests.h */; };
+		248FF7B213BAE8730096547E /* SmartHRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF7B113BAE8730096547E /* SmartHRMTests.m */; };
+		248FF81213BAEE8E0096547E /* WizardScreenWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF81013BAEE8E0096547E /* WizardScreenWelcome.m */; };
+		248FF81313BAEE8E0096547E /* WizardScreenWelcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FF81113BAEE8E0096547E /* WizardScreenWelcome.xib */; };
+		248FF81713BAEECA0096547E /* WizardScreenBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF81513BAEECA0096547E /* WizardScreenBody.m */; };
+		248FF81813BAEECA0096547E /* WizardScreenBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FF81613BAEECA0096547E /* WizardScreenBody.xib */; };
+		248FF88C13BB0E1E0096547E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88B13BB0E1E0096547E /* QuartzCore.framework */; };
+		248FF88E13BB195A0096547E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88D13BB195A0096547E /* MapKit.framework */; };
+		24B5FB7513BC896100BF5CF9 /* BigLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7313BC896100BF5CF9 /* BigLogo.png */; };
+		24B5FB7613BC896100BF5CF9 /* BigLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */; };
+		24ED0FC313BDA9AC006E6D9D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24ED0FC213BDA9AC006E6D9D /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248FF7A613BAE8720096547E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248FF77513BAE8720096547E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248FF77D13BAE8720096547E;
+			remoteInfo = SmartHRM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2426CC1B13BCA22700BE30A4 /* WizardScreenSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenSuper.h; sourceTree = "<group>"; };
+		2426CC1C13BCA22700BE30A4 /* WizardScreenSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenSuper.m; sourceTree = "<group>"; };
+		2426CC1E13BCA88200BE30A4 /* WizardScreenAge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenAge.h; sourceTree = "<group>"; };
+		2426CC1F13BCA88200BE30A4 /* WizardScreenAge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenAge.m; sourceTree = "<group>"; };
+		2426CC2013BCA88200BE30A4 /* WizardScreenAge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenAge.xib; sourceTree = "<group>"; };
+		2426CC2313BCAAD900BE30A4 /* WizardScreenHrm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenHrm.h; sourceTree = "<group>"; };
+		2426CC2413BCAAD900BE30A4 /* WizardScreenHrm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenHrm.m; sourceTree = "<group>"; };
+		2426CC2513BCAADA00BE30A4 /* WizardScreenHrm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenHrm.xib; sourceTree = "<group>"; };
+		24338DE013C0B4F100325704 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		24338DE113C0B4F100325704 /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		24338DE613C0B54000325704 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		24338DE713C0B54000325704 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		24338DF113C10F5000325704 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
+		24338DF313C10F6400325704 /* man@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man@2x.png"; sourceTree = "<group>"; };
+		24338DF513C10FAC00325704 /* preferences@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preferences@2x.png"; sourceTree = "<group>"; };
+		24338DF713C10FBA00325704 /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
+		24338DF913C10FDE00325704 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		24338DFB13C10FEE00325704 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		24338DFD13C1101600325704 /* arrowup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowup@2x.png"; sourceTree = "<group>"; };
+		24338DFF13C1102200325704 /* arrowleft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowleft@2x.png"; sourceTree = "<group>"; };
+		24338E0013C1102200325704 /* arrowright@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowright@2x.png"; sourceTree = "<group>"; };
+		24338E0313C1104C00325704 /* arrowleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowleft.png; sourceTree = "<group>"; };
+		24338E0413C1104C00325704 /* arrowright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowright.png; sourceTree = "<group>"; };
+		24338E0513C1104C00325704 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
+		24338E0913C1112200325704 /* world@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world@2x.png"; sourceTree = "<group>"; };
+		24338E0B13C1112D00325704 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
+		24338E0D13C1119100325704 /* record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record@2x.png"; sourceTree = "<group>"; };
+		24338E0F13C111A200325704 /* pencilangled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencilangled@2x.png"; sourceTree = "<group>"; };
+		24338E1113C111AF00325704 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		24338E1313C111BA00325704 /* pencilangled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilangled.png; sourceTree = "<group>"; };
+		24338E1713C1183D00325704 /* MainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
+		24338E1813C1183D00325704 /* MainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreen.m; sourceTree = "<group>"; };
+		24338E1913C1183D00325704 /* MainScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreen.xib; sourceTree = "<group>"; };
+		24338E1C13C11FAF00325704 /* ShareScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareScreen.h; sourceTree = "<group>"; };
+		24338E1D13C11FAF00325704 /* ShareScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareScreen.m; sourceTree = "<group>"; };
+		24338E1E13C11FAF00325704 /* ShareScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareScreen.xib; sourceTree = "<group>"; };
+		248FF77E13BAE8720096547E /* SmartHRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FF78213BAE8720096547E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		248FF78413BAE8720096547E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		248FF78613BAE8720096547E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		248FF78813BAE8720096547E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		248FF78C13BAE8720096547E /* SmartHRM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHRM-Info.plist"; sourceTree = "<group>"; };
+		248FF78E13BAE8720096547E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248FF79013BAE8720096547E /* SmartHRM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartHRM-Prefix.pch"; sourceTree = "<group>"; };
+		248FF79113BAE8720096547E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		248FF79313BAE8720096547E /* SmartHRMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartHRMAppDelegate.h; sourceTree = "<group>"; };
+		248FF79413BAE8720096547E /* SmartHRMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHRMAppDelegate.m; sourceTree = "<group>"; };
+		248FF79713BAE8720096547E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		248FF79A13BAE8720096547E /* SmartHRM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartHRM.xcdatamodel; sourceTree = "<group>"; };
+		248FF7A113BAE8720096547E /* SmartHRMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHRMTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FF7AA13BAE8720096547E /* SmartHRMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHRMTests-Info.plist"; sourceTree = "<group>"; };
+		248FF7AC13BAE8720096547E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248FF7AE13BAE8720096547E /* SmartHRMTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartHRMTests-Prefix.pch"; sourceTree = "<group>"; };
+		248FF7AF13BAE8730096547E /* SmartHRMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartHRMTests.h; sourceTree = "<group>"; };
+		248FF7B113BAE8730096547E /* SmartHRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHRMTests.m; sourceTree = "<group>"; };
+		248FF80F13BAEE8E0096547E /* WizardScreenWelcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenWelcome.h; sourceTree = "<group>"; };
+		248FF81013BAEE8E0096547E /* WizardScreenWelcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenWelcome.m; sourceTree = "<group>"; };
+		248FF81113BAEE8E0096547E /* WizardScreenWelcome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenWelcome.xib; sourceTree = "<group>"; };
+		248FF81413BAEECA0096547E /* WizardScreenBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenBody.h; sourceTree = "<group>"; };
+		248FF81513BAEECA0096547E /* WizardScreenBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenBody.m; sourceTree = "<group>"; };
+		248FF81613BAEECA0096547E /* WizardScreenBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenBody.xib; sourceTree = "<group>"; };
+		248FF88B13BB0E1E0096547E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		248FF88D13BB195A0096547E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		24B5FB7313BC896100BF5CF9 /* BigLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigLogo.png; sourceTree = "<group>"; };
+		24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BigLogo@2x.png"; sourceTree = "<group>"; };
+		24ED0FC213BDA9AC006E6D9D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248FF77B13BAE8720096547E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF88E13BB195A0096547E /* MapKit.framework in Frameworks */,
+				248FF88C13BB0E1E0096547E /* QuartzCore.framework in Frameworks */,
+				248FF78313BAE8720096547E /* UIKit.framework in Frameworks */,
+				248FF78513BAE8720096547E /* Foundation.framework in Frameworks */,
+				248FF78713BAE8720096547E /* CoreGraphics.framework in Frameworks */,
+				248FF78913BAE8720096547E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FF79D13BAE8720096547E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF7A213BAE8720096547E /* UIKit.framework in Frameworks */,
+				248FF7A313BAE8720096547E /* Foundation.framework in Frameworks */,
+				248FF7A413BAE8720096547E /* CoreGraphics.framework in Frameworks */,
+				248FF7A513BAE8720096547E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24338DDF13C0B4F000325704 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				24338DE013C0B4F100325704 /* Helpers.h */,
+				24338DE113C0B4F100325704 /* Helpers.m */,
+				24338DE613C0B54000325704 /* Constants.h */,
+				24338DE713C0B54000325704 /* Constants.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		24338E1613C1183D00325704 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				24338E1713C1183D00325704 /* MainScreen.h */,
+				24338E1813C1183D00325704 /* MainScreen.m */,
+				24338E1913C1183D00325704 /* MainScreen.xib */,
+				24338E1C13C11FAF00325704 /* ShareScreen.h */,
+				24338E1D13C11FAF00325704 /* ShareScreen.m */,
+				24338E1E13C11FAF00325704 /* ShareScreen.xib */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		248FF77313BAE8720096547E = {
+			isa = PBXGroup;
+			children = (
+				248FF78A13BAE8720096547E /* SmartHRM */,
+				248FF7A813BAE8720096547E /* SmartHRMTests */,
+				248FF78113BAE8720096547E /* Frameworks */,
+				248FF77F13BAE8720096547E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248FF77F13BAE8720096547E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248FF77E13BAE8720096547E /* SmartHRM.app */,
+				248FF7A113BAE8720096547E /* SmartHRMTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248FF78113BAE8720096547E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				248FF88D13BB195A0096547E /* MapKit.framework */,
+				248FF88B13BB0E1E0096547E /* QuartzCore.framework */,
+				248FF78213BAE8720096547E /* UIKit.framework */,
+				248FF78413BAE8720096547E /* Foundation.framework */,
+				248FF78613BAE8720096547E /* CoreGraphics.framework */,
+				248FF78813BAE8720096547E /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248FF78A13BAE8720096547E /* SmartHRM */ = {
+			isa = PBXGroup;
+			children = (
+				24338E1613C1183D00325704 /* Pages */,
+				248FF80E13BAEE8E0096547E /* Wizard */,
+				24338DDF13C0B4F000325704 /* Utilities */,
+				24B5FB7213BC896100BF5CF9 /* Images */,
+				248FF79313BAE8720096547E /* SmartHRMAppDelegate.h */,
+				248FF79413BAE8720096547E /* SmartHRMAppDelegate.m */,
+				248FF79613BAE8720096547E /* MainWindow.xib */,
+				248FF79913BAE8720096547E /* SmartHRM.xcdatamodeld */,
+				248FF78B13BAE8720096547E /* Supporting Files */,
+			);
+			path = SmartHRM;
+			sourceTree = "<group>";
+		};
+		248FF78B13BAE8720096547E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				248FF78C13BAE8720096547E /* SmartHRM-Info.plist */,
+				248FF78D13BAE8720096547E /* InfoPlist.strings */,
+				248FF79013BAE8720096547E /* SmartHRM-Prefix.pch */,
+				248FF79113BAE8720096547E /* main.m */,
+				24ED0FC213BDA9AC006E6D9D /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248FF7A813BAE8720096547E /* SmartHRMTests */ = {
+			isa = PBXGroup;
+			children = (
+				248FF7AF13BAE8730096547E /* SmartHRMTests.h */,
+				248FF7B113BAE8730096547E /* SmartHRMTests.m */,
+				248FF7A913BAE8720096547E /* Supporting Files */,
+			);
+			path = SmartHRMTests;
+			sourceTree = "<group>";
+		};
+		248FF7A913BAE8720096547E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				248FF7AA13BAE8720096547E /* SmartHRMTests-Info.plist */,
+				248FF7AB13BAE8720096547E /* InfoPlist.strings */,
+				248FF7AE13BAE8720096547E /* SmartHRMTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248FF80E13BAEE8E0096547E /* Wizard */ = {
+			isa = PBXGroup;
+			children = (
+				2426CC1B13BCA22700BE30A4 /* WizardScreenSuper.h */,
+				2426CC1C13BCA22700BE30A4 /* WizardScreenSuper.m */,
+				248FF80F13BAEE8E0096547E /* WizardScreenWelcome.h */,
+				248FF81013BAEE8E0096547E /* WizardScreenWelcome.m */,
+				248FF81113BAEE8E0096547E /* WizardScreenWelcome.xib */,
+				248FF81413BAEECA0096547E /* WizardScreenBody.h */,
+				248FF81513BAEECA0096547E /* WizardScreenBody.m */,
+				248FF81613BAEECA0096547E /* WizardScreenBody.xib */,
+				2426CC1E13BCA88200BE30A4 /* WizardScreenAge.h */,
+				2426CC1F13BCA88200BE30A4 /* WizardScreenAge.m */,
+				2426CC2013BCA88200BE30A4 /* WizardScreenAge.xib */,
+				2426CC2313BCAAD900BE30A4 /* WizardScreenHrm.h */,
+				2426CC2413BCAAD900BE30A4 /* WizardScreenHrm.m */,
+				2426CC2513BCAADA00BE30A4 /* WizardScreenHrm.xib */,
+			);
+			path = Wizard;
+			sourceTree = "<group>";
+		};
+		24B5FB7213BC896100BF5CF9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				24338E1313C111BA00325704 /* pencilangled.png */,
+				24338E1113C111AF00325704 /* record.png */,
+				24338E0F13C111A200325704 /* pencilangled@2x.png */,
+				24338E0D13C1119100325704 /* record@2x.png */,
+				24338E0B13C1112D00325704 /* world.png */,
+				24338E0913C1112200325704 /* world@2x.png */,
+				24338E0313C1104C00325704 /* arrowleft.png */,
+				24338E0413C1104C00325704 /* arrowright.png */,
+				24338E0513C1104C00325704 /* arrowup.png */,
+				24338DFF13C1102200325704 /* arrowleft@2x.png */,
+				24338E0013C1102200325704 /* arrowright@2x.png */,
+				24338DFD13C1101600325704 /* arrowup@2x.png */,
+				24338DFB13C10FEE00325704 /* delete@2x.png */,
+				24338DF913C10FDE00325704 /* delete.png */,
+				24338DF713C10FBA00325704 /* preferences.png */,
+				24338DF513C10FAC00325704 /* preferences@2x.png */,
+				24338DF313C10F6400325704 /* man@2x.png */,
+				24338DF113C10F5000325704 /* man.png */,
+				24B5FB7313BC896100BF5CF9 /* BigLogo.png */,
+				24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248FF77D13BAE8720096547E /* SmartHRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FF7B513BAE8730096547E /* Build configuration list for PBXNativeTarget "SmartHRM" */;
+			buildPhases = (
+				248FF77A13BAE8720096547E /* Sources */,
+				248FF77B13BAE8720096547E /* Frameworks */,
+				248FF77C13BAE8720096547E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHRM;
+			productName = SmartHRM;
+			productReference = 248FF77E13BAE8720096547E /* SmartHRM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248FF7A013BAE8720096547E /* SmartHRMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FF7B813BAE8730096547E /* Build configuration list for PBXNativeTarget "SmartHRMTests" */;
+			buildPhases = (
+				248FF79C13BAE8720096547E /* Sources */,
+				248FF79D13BAE8720096547E /* Frameworks */,
+				248FF79E13BAE8720096547E /* Resources */,
+				248FF79F13BAE8720096547E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248FF7A713BAE8720096547E /* PBXTargetDependency */,
+			);
+			name = SmartHRMTests;
+			productName = SmartHRMTests;
+			productReference = 248FF7A113BAE8720096547E /* SmartHRMTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248FF77513BAE8720096547E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 248FF77813BAE8720096547E /* Build configuration list for PBXProject "SmartHRM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 248FF77313BAE8720096547E;
+			productRefGroup = 248FF77F13BAE8720096547E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248FF77D13BAE8720096547E /* SmartHRM */,
+				248FF7A013BAE8720096547E /* SmartHRMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248FF77C13BAE8720096547E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF78F13BAE8720096547E /* InfoPlist.strings in Resources */,
+				248FF79813BAE8720096547E /* MainWindow.xib in Resources */,
+				248FF81313BAEE8E0096547E /* WizardScreenWelcome.xib in Resources */,
+				248FF81813BAEECA0096547E /* WizardScreenBody.xib in Resources */,
+				24B5FB7513BC896100BF5CF9 /* BigLogo.png in Resources */,
+				24B5FB7613BC896100BF5CF9 /* BigLogo@2x.png in Resources */,
+				2426CC2213BCA88200BE30A4 /* WizardScreenAge.xib in Resources */,
+				2426CC2713BCAADA00BE30A4 /* WizardScreenHrm.xib in Resources */,
+				24ED0FC313BDA9AC006E6D9D /* Settings.bundle in Resources */,
+				24338DF213C10F5000325704 /* man.png in Resources */,
+				24338DF413C10F6400325704 /* man@2x.png in Resources */,
+				24338DF613C10FAC00325704 /* preferences@2x.png in Resources */,
+				24338DF813C10FBA00325704 /* preferences.png in Resources */,
+				24338DFA13C10FDE00325704 /* delete.png in Resources */,
+				24338DFC13C10FEE00325704 /* delete@2x.png in Resources */,
+				24338DFE13C1101600325704 /* arrowup@2x.png in Resources */,
+				24338E0113C1102200325704 /* arrowleft@2x.png in Resources */,
+				24338E0213C1102200325704 /* arrowright@2x.png in Resources */,
+				24338E0613C1104C00325704 /* arrowleft.png in Resources */,
+				24338E0713C1104C00325704 /* arrowright.png in Resources */,
+				24338E0813C1104C00325704 /* arrowup.png in Resources */,
+				24338E0A13C1112200325704 /* world@2x.png in Resources */,
+				24338E0C13C1112D00325704 /* world.png in Resources */,
+				24338E0E13C1119100325704 /* record@2x.png in Resources */,
+				24338E1013C111A200325704 /* pencilangled@2x.png in Resources */,
+				24338E1213C111AF00325704 /* record.png in Resources */,
+				24338E1413C111BA00325704 /* pencilangled.png in Resources */,
+				24338E1B13C1183D00325704 /* MainScreen.xib in Resources */,
+				24338E2013C11FAF00325704 /* ShareScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FF79E13BAE8720096547E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF7AD13BAE8720096547E /* InfoPlist.strings in Resources */,
+				248FF7B013BAE8730096547E /* SmartHRMTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		248FF79F13BAE8720096547E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248FF77A13BAE8720096547E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF79213BAE8720096547E /* main.m in Sources */,
+				248FF79513BAE8720096547E /* SmartHRMAppDelegate.m in Sources */,
+				248FF79B13BAE8720096547E /* SmartHRM.xcdatamodeld in Sources */,
+				248FF81213BAEE8E0096547E /* WizardScreenWelcome.m in Sources */,
+				248FF81713BAEECA0096547E /* WizardScreenBody.m in Sources */,
+				2426CC1D13BCA22700BE30A4 /* WizardScreenSuper.m in Sources */,
+				2426CC2113BCA88200BE30A4 /* WizardScreenAge.m in Sources */,
+				2426CC2613BCAADA00BE30A4 /* WizardScreenHrm.m in Sources */,
+				24338DE213C0B4F100325704 /* Helpers.m in Sources */,
+				24338DE813C0B54000325704 /* Constants.m in Sources */,
+				24338E1A13C1183D00325704 /* MainScreen.m in Sources */,
+				24338E1F13C11FAF00325704 /* ShareScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FF79C13BAE8720096547E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FF7B213BAE8730096547E /* SmartHRMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248FF7A713BAE8720096547E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248FF77D13BAE8720096547E /* SmartHRM */;
+			targetProxy = 248FF7A613BAE8720096547E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		248FF78D13BAE8720096547E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FF78E13BAE8720096547E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		248FF79613BAE8720096547E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FF79713BAE8720096547E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		248FF7AB13BAE8720096547E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FF7AC13BAE8720096547E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248FF7B313BAE8730096547E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		248FF7B413BAE8730096547E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		248FF7B613BAE8730096547E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHRM/SmartHRM-Prefix.pch";
+				INFOPLIST_FILE = "SmartHRM/SmartHRM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		248FF7B713BAE8730096547E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHRM/SmartHRM-Prefix.pch";
+				INFOPLIST_FILE = "SmartHRM/SmartHRM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		248FF7B913BAE8730096547E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartHRM.app/SmartHRM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHRMTests/SmartHRMTests-Prefix.pch";
+				INFOPLIST_FILE = "SmartHRMTests/SmartHRMTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		248FF7BA13BAE8730096547E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartHRM.app/SmartHRM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHRMTests/SmartHRMTests-Prefix.pch";
+				INFOPLIST_FILE = "SmartHRMTests/SmartHRMTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248FF77813BAE8720096547E /* Build configuration list for PBXProject "SmartHRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FF7B313BAE8730096547E /* Debug */,
+				248FF7B413BAE8730096547E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FF7B513BAE8730096547E /* Build configuration list for PBXNativeTarget "SmartHRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FF7B613BAE8730096547E /* Debug */,
+				248FF7B713BAE8730096547E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FF7B813BAE8730096547E /* Build configuration list for PBXNativeTarget "SmartHRMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FF7B913BAE8730096547E /* Debug */,
+				248FF7BA13BAE8730096547E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		248FF79913BAE8720096547E /* SmartHRM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				248FF79A13BAE8720096547E /* SmartHRM.xcdatamodel */,
+			);
+			currentVersion = 248FF79A13BAE8720096547E /* SmartHRM.xcdatamodel */;
+			path = SmartHRM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 248FF77513BAE8720096547E /* Project object */;
+}
