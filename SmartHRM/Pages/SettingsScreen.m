@@ -1,15 +1,15 @@
 //
-//  ShareScreen.m
+//  SettingsScreen.m
 //  SmartHRM
 //
 //  Created by Nabi on 7/4/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ShareScreen.h"
-#import "EmailConnection.h"
+#import "SettingsScreen.h"
 
-@implementation ShareScreen
+
+@implementation SettingsScreen
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,11 +52,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (IBAction)sendEmail:(id)sender {
-    EmailConnection *conn = [[EmailConnection alloc] init];
-    [conn sendEmailBody:@"Hi Sean,<br><br>This is example of <b>EmailConnection</b> class. If you want to use contacts, just touch at the top of this page (\"<i>To:</i>\" section) - there is <u>native iPhone contacts</u> for email." asHtml:YES withSubject:@"SmartHRM" attachFile:nil delegateIs:self];
 }
 
 @end

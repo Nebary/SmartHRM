@@ -1,5 +1,5 @@
 //
-//  ShareScreen.h
+//  SettingsScreen.h
 //  SmartHRM
 //
 //  Created by Nabi on 7/4/11.
@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ShareScreen : UIViewController {
+@interface SettingsScreen : UIViewController {
     
 }
-
-- (IBAction)sendEmail:(id)sender;
 
 @end
