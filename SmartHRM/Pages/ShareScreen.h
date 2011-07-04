@@ -14,5 +14,6 @@
 }
 
 - (IBAction)sendEmail:(id)sender;
+- (IBAction)sendSms:(id)sender;
 
 @end

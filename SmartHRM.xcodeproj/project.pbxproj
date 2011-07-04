@@ -65,6 +65,7 @@
 		2490BD1E13C195F10014FB26 /* SettingsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2490BD1C13C195F10014FB26 /* SettingsScreen.xib */; };
 		2490BD2913C1A1B20014FB26 /* EmailConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD2813C1A1B20014FB26 /* EmailConnection.m */; };
 		2490BD3313C1A2630014FB26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490BD3213C1A2630014FB26 /* MessageUI.framework */; };
+		2490BD3913C1AB900014FB26 /* SmsConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD3813C1AB900014FB26 /* SmsConnection.m */; };
 		24B5FB7513BC896100BF5CF9 /* BigLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7313BC896100BF5CF9 /* BigLogo.png */; };
 		24B5FB7613BC896100BF5CF9 /* BigLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */; };
 		24ED0FC313BDA9AC006E6D9D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24ED0FC213BDA9AC006E6D9D /* Settings.bundle */; };
@@ -156,6 +157,8 @@
 		2490BD2713C1A1B10014FB26 /* EmailConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailConnection.h; sourceTree = "<group>"; };
 		2490BD2813C1A1B20014FB26 /* EmailConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailConnection.m; sourceTree = "<group>"; };
 		2490BD3213C1A2630014FB26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2490BD3713C1AB900014FB26 /* SmsConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmsConnection.h; sourceTree = "<group>"; };
+		2490BD3813C1AB900014FB26 /* SmsConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmsConnection.m; sourceTree = "<group>"; };
 		24B5FB7313BC896100BF5CF9 /* BigLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigLogo.png; sourceTree = "<group>"; };
 		24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BigLogo@2x.png"; sourceTree = "<group>"; };
 		24ED0FC213BDA9AC006E6D9D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				2490BD1813C18F8A0014FB26 /* ActivityManager.m */,
 				2490BD2713C1A1B10014FB26 /* EmailConnection.h */,
 				2490BD2813C1A1B20014FB26 /* EmailConnection.m */,
+				2490BD3713C1AB900014FB26 /* SmsConnection.h */,
+				2490BD3813C1AB900014FB26 /* SmsConnection.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				2490BD1913C18F8A0014FB26 /* ActivityManager.m in Sources */,
 				2490BD1D13C195F10014FB26 /* SettingsScreen.m in Sources */,
 				2490BD2913C1A1B20014FB26 /* EmailConnection.m in Sources */,
+				2490BD3913C1AB900014FB26 /* SmsConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

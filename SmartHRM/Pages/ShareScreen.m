@@ -8,6 +8,7 @@
 
 #import "ShareScreen.h"
 #import "EmailConnection.h"
+#import "SmsConnection.h"
 
 @implementation ShareScreen
 
@@ -57,6 +58,11 @@
 - (IBAction)sendEmail:(id)sender {
     EmailConnection *conn = [[EmailConnection alloc] init];
     [conn sendEmailBody:@"Hi Sean,<br><br>This is example of <b>EmailConnection</b> class. If you want to use contacts, just touch at the top of this page (\"<i>To:</i>\" section) - there is <u>native iPhone contacts</u> for email." asHtml:YES withSubject:@"SmartHRM" attachFile:nil delegateIs:self];
+}
+
+- (IBAction)sendSms:(id)sender {
+    SmsConnection *conn = [[SmsConnection alloc] init];
+    [conn sendSmsText:@"Hi, this is how SMS working here" delegateIs:self];
 }
 
 @end

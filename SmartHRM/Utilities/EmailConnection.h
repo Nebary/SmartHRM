@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
 
 @interface EmailConnection : NSObject <MFMailComposeViewControllerDelegate> {
     UIViewController *delegate;
 }
--(void)sendEmailBody: (NSString *)emailBody asHtml: (BOOL)html withSubject: (NSString *)subject attachFile: (NSString *)file delegateIs: (UIViewController *)delegateVC;
+- (void) sendEmailBody: (NSString *)emailBody asHtml: (BOOL)html withSubject: (NSString *)subject attachFile: (NSString *)file delegateIs: (UIViewController *)delegateVC;
 @end
