@@ -58,6 +58,9 @@
 		248FF81813BAEECA0096547E /* WizardScreenBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FF81613BAEECA0096547E /* WizardScreenBody.xib */; };
 		248FF88C13BB0E1E0096547E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88B13BB0E1E0096547E /* QuartzCore.framework */; };
 		248FF88E13BB195A0096547E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88D13BB195A0096547E /* MapKit.framework */; };
+		2490BD1213C18EB30014FB26 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1113C18EB30014FB26 /* Activity.m */; };
+		2490BD1613C18EF80014FB26 /* ActivityDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1513C18EF80014FB26 /* ActivityDetails.m */; };
+		2490BD1913C18F8A0014FB26 /* ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1813C18F8A0014FB26 /* ActivityManager.m */; };
 		24B5FB7513BC896100BF5CF9 /* BigLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7313BC896100BF5CF9 /* BigLogo.png */; };
 		24B5FB7613BC896100BF5CF9 /* BigLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */; };
 		24ED0FC313BDA9AC006E6D9D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24ED0FC213BDA9AC006E6D9D /* Settings.bundle */; };
@@ -137,6 +140,12 @@
 		248FF81613BAEECA0096547E /* WizardScreenBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenBody.xib; sourceTree = "<group>"; };
 		248FF88B13BB0E1E0096547E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		248FF88D13BB195A0096547E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2490BD1013C18EB30014FB26 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		2490BD1113C18EB30014FB26 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		2490BD1413C18EF80014FB26 /* ActivityDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetails.h; sourceTree = "<group>"; };
+		2490BD1513C18EF80014FB26 /* ActivityDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetails.m; sourceTree = "<group>"; };
+		2490BD1713C18F8A0014FB26 /* ActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityManager.h; sourceTree = "<group>"; };
+		2490BD1813C18F8A0014FB26 /* ActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityManager.m; sourceTree = "<group>"; };
 		24B5FB7313BC896100BF5CF9 /* BigLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigLogo.png; sourceTree = "<group>"; };
 		24B5FB7413BC896100BF5CF9 /* BigLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BigLogo@2x.png"; sourceTree = "<group>"; };
 		24ED0FC213BDA9AC006E6D9D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -173,10 +182,16 @@
 		24338DDF13C0B4F000325704 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2490BD1413C18EF80014FB26 /* ActivityDetails.h */,
+				2490BD1513C18EF80014FB26 /* ActivityDetails.m */,
+				2490BD1013C18EB30014FB26 /* Activity.h */,
+				2490BD1113C18EB30014FB26 /* Activity.m */,
 				24338DE013C0B4F100325704 /* Helpers.h */,
 				24338DE113C0B4F100325704 /* Helpers.m */,
 				24338DE613C0B54000325704 /* Constants.h */,
 				24338DE713C0B54000325704 /* Constants.m */,
+				2490BD1713C18F8A0014FB26 /* ActivityManager.h */,
+				2490BD1813C18F8A0014FB26 /* ActivityManager.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -465,6 +480,9 @@
 				24338DE813C0B54000325704 /* Constants.m in Sources */,
 				24338E1A13C1183D00325704 /* MainScreen.m in Sources */,
 				24338E1F13C11FAF00325704 /* ShareScreen.m in Sources */,
+				2490BD1213C18EB30014FB26 /* Activity.m in Sources */,
+				2490BD1613C18EF80014FB26 /* ActivityDetails.m in Sources */,
+				2490BD1913C18F8A0014FB26 /* ActivityManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
