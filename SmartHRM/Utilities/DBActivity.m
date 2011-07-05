@@ -3,14 +3,13 @@
 //  SmartHRM
 //
 //  Created by Dmitry Sitnikov on 7/4/11.
+//  Modified by Nabi on 7/5/11.
 //  Copyright 2011 Rus Wizards LLC. All rights reserved.
 //
 
 #import "DbActivity.h"
 
 @implementation DbActivity
-
-@synthesize managedObjectContext;
 
 -(Activity*) insertActivity {
     Activity *activity = (Activity *)[NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:managedObjectContext];

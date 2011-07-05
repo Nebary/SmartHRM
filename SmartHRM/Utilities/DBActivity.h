@@ -3,6 +3,7 @@
 //  SmartHRM
 //
 //  Created by Dmitry Sitnikov on 7/4/11.
+//  Modified by Nabi on 7/5/11.
 //  Copyright 2011 Rus Wizards LLC. All rights reserved.
 //
 
@@ -13,7 +14,6 @@
 @interface DbActivity : NSObject {
     
 }
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 ///Add new activity and return corresponding managed object to wotk with their fields.
 -(Activity*) insertActivity;
