@@ -36,6 +36,8 @@
 		24338E1B13C1183D00325704 /* MainScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1913C1183D00325704 /* MainScreen.xib */; };
 		24338E1F13C11FAF00325704 /* ShareScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 24338E1D13C11FAF00325704 /* ShareScreen.m */; };
 		24338E2013C11FAF00325704 /* ShareScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24338E1E13C11FAF00325704 /* ShareScreen.xib */; };
+		24431DBF13C32BCC00595BA7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 24431DBE13C32BCC00595BA7 /* Activity.m */; };
+		24431DC213C32BEF00595BA7 /* ActivityDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 24431DC113C32BEF00595BA7 /* ActivityDetails.m */; };
 		248FF78313BAE8720096547E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78213BAE8720096547E /* UIKit.framework */; };
 		248FF78513BAE8720096547E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78413BAE8720096547E /* Foundation.framework */; };
 		248FF78713BAE8720096547E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF78613BAE8720096547E /* CoreGraphics.framework */; };
@@ -58,9 +60,6 @@
 		248FF81813BAEECA0096547E /* WizardScreenBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FF81613BAEECA0096547E /* WizardScreenBody.xib */; };
 		248FF88C13BB0E1E0096547E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88B13BB0E1E0096547E /* QuartzCore.framework */; };
 		248FF88E13BB195A0096547E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FF88D13BB195A0096547E /* MapKit.framework */; };
-		2490BD1213C18EB30014FB26 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1113C18EB30014FB26 /* Activity.m */; };
-		2490BD1613C18EF80014FB26 /* ActivityDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1513C18EF80014FB26 /* ActivityDetails.m */; };
-		2490BD1913C18F8A0014FB26 /* ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1813C18F8A0014FB26 /* ActivityManager.m */; };
 		2490BD1D13C195F10014FB26 /* SettingsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD1B13C195F10014FB26 /* SettingsScreen.m */; };
 		2490BD1E13C195F10014FB26 /* SettingsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2490BD1C13C195F10014FB26 /* SettingsScreen.xib */; };
 		2490BD2913C1A1B20014FB26 /* EmailConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490BD2813C1A1B20014FB26 /* EmailConnection.m */; };
@@ -118,6 +117,10 @@
 		24338E1C13C11FAF00325704 /* ShareScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareScreen.h; sourceTree = "<group>"; };
 		24338E1D13C11FAF00325704 /* ShareScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareScreen.m; sourceTree = "<group>"; };
 		24338E1E13C11FAF00325704 /* ShareScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareScreen.xib; sourceTree = "<group>"; };
+		24431DBD13C32BCC00595BA7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		24431DBE13C32BCC00595BA7 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		24431DC013C32BEF00595BA7 /* ActivityDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetails.h; sourceTree = "<group>"; };
+		24431DC113C32BEF00595BA7 /* ActivityDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetails.m; sourceTree = "<group>"; };
 		248FF77E13BAE8720096547E /* SmartHRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		248FF78213BAE8720096547E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		248FF78413BAE8720096547E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,12 +148,6 @@
 		248FF81613BAEECA0096547E /* WizardScreenBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardScreenBody.xib; sourceTree = "<group>"; };
 		248FF88B13BB0E1E0096547E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		248FF88D13BB195A0096547E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2490BD1013C18EB30014FB26 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
-		2490BD1113C18EB30014FB26 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
-		2490BD1413C18EF80014FB26 /* ActivityDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetails.h; sourceTree = "<group>"; };
-		2490BD1513C18EF80014FB26 /* ActivityDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetails.m; sourceTree = "<group>"; };
-		2490BD1713C18F8A0014FB26 /* ActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityManager.h; sourceTree = "<group>"; };
-		2490BD1813C18F8A0014FB26 /* ActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityManager.m; sourceTree = "<group>"; };
 		2490BD1A13C195F10014FB26 /* SettingsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsScreen.h; sourceTree = "<group>"; };
 		2490BD1B13C195F10014FB26 /* SettingsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsScreen.m; sourceTree = "<group>"; };
 		2490BD1C13C195F10014FB26 /* SettingsScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsScreen.xib; sourceTree = "<group>"; };
@@ -196,16 +193,14 @@
 		24338DDF13C0B4F000325704 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2490BD1413C18EF80014FB26 /* ActivityDetails.h */,
-				2490BD1513C18EF80014FB26 /* ActivityDetails.m */,
-				2490BD1013C18EB30014FB26 /* Activity.h */,
-				2490BD1113C18EB30014FB26 /* Activity.m */,
+				24431DC013C32BEF00595BA7 /* ActivityDetails.h */,
+				24431DC113C32BEF00595BA7 /* ActivityDetails.m */,
+				24431DBD13C32BCC00595BA7 /* Activity.h */,
+				24431DBE13C32BCC00595BA7 /* Activity.m */,
 				24338DE013C0B4F100325704 /* Helpers.h */,
 				24338DE113C0B4F100325704 /* Helpers.m */,
 				24338DE613C0B54000325704 /* Constants.h */,
 				24338DE713C0B54000325704 /* Constants.m */,
-				2490BD1713C18F8A0014FB26 /* ActivityManager.h */,
-				2490BD1813C18F8A0014FB26 /* ActivityManager.m */,
 				2490BD2713C1A1B10014FB26 /* EmailConnection.h */,
 				2490BD2813C1A1B20014FB26 /* EmailConnection.m */,
 				2490BD3713C1AB900014FB26 /* SmsConnection.h */,
@@ -503,12 +498,11 @@
 				24338DE813C0B54000325704 /* Constants.m in Sources */,
 				24338E1A13C1183D00325704 /* MainScreen.m in Sources */,
 				24338E1F13C11FAF00325704 /* ShareScreen.m in Sources */,
-				2490BD1213C18EB30014FB26 /* Activity.m in Sources */,
-				2490BD1613C18EF80014FB26 /* ActivityDetails.m in Sources */,
-				2490BD1913C18F8A0014FB26 /* ActivityManager.m in Sources */,
 				2490BD1D13C195F10014FB26 /* SettingsScreen.m in Sources */,
 				2490BD2913C1A1B20014FB26 /* EmailConnection.m in Sources */,
 				2490BD3913C1AB900014FB26 /* SmsConnection.m in Sources */,
+				24431DBF13C32BCC00595BA7 /* Activity.m in Sources */,
+				24431DC213C32BEF00595BA7 /* ActivityDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,15 +2,15 @@
 //  ActivityDetails.m
 //  SmartHRM
 //
-//  Created by Nabi on 7/4/11.
+//  Created by Nabi on 7/5/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "ActivityDetails.h"
+#import "Activity.h"
 
 
 @implementation ActivityDetails
-@dynamic ActivityID;
 @dynamic Lon;
 @dynamic Alt;
 @dynamic LogID;
@@ -18,5 +18,7 @@
 @dynamic LogDateTime;
 @dynamic LogType;
 @dynamic HeartRate;
+@dynamic Activity;
+
 
 @end

@@ -2,13 +2,14 @@
 //  Activity.h
 //  SmartHRM
 //
-//  Created by Nabi on 7/4/11.
+//  Created by Nabi on 7/5/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class ActivityDetails;
 
 @interface Activity : NSManagedObject {
 @private
@@ -40,5 +41,6 @@
 @property (nonatomic, retain) NSNumber * StartAlt;
 @property (nonatomic, retain) NSNumber * EndAlt;
 @property (nonatomic, retain) NSNumber * TargetHeartRateLow;
+@property (nonatomic, retain) NSSet* ActivityDetails;
 
 @end

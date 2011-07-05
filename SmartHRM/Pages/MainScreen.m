@@ -95,6 +95,7 @@
     [self drawFrames];
     [self drawGradient];
     [self placeViewsInScrollView];
+    [self showWizard];
 }
 
 - (void)viewDidUnload
