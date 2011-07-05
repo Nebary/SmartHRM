@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2402D18913C32F3600712D99 /* DbActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2402D18713C32F3600712D99 /* DbActivity.m */; };
 		2426CC1D13BCA22700BE30A4 /* WizardScreenSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426CC1C13BCA22700BE30A4 /* WizardScreenSuper.m */; };
 		2426CC2113BCA88200BE30A4 /* WizardScreenAge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426CC1F13BCA88200BE30A4 /* WizardScreenAge.m */; };
 		2426CC2213BCA88200BE30A4 /* WizardScreenAge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CC2013BCA88200BE30A4 /* WizardScreenAge.xib */; };
@@ -81,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2402D18713C32F3600712D99 /* DbActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbActivity.m; sourceTree = "<group>"; };
+		2402D18813C32F3600712D99 /* DbActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbActivity.h; sourceTree = "<group>"; };
 		2426CC1B13BCA22700BE30A4 /* WizardScreenSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenSuper.h; sourceTree = "<group>"; };
 		2426CC1C13BCA22700BE30A4 /* WizardScreenSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardScreenSuper.m; sourceTree = "<group>"; };
 		2426CC1E13BCA88200BE30A4 /* WizardScreenAge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardScreenAge.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 		24338DDF13C0B4F000325704 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2402D18813C32F3600712D99 /* DbActivity.h */,
+				2402D18713C32F3600712D99 /* DbActivity.m */,
 				24431DC013C32BEF00595BA7 /* ActivityDetails.h */,
 				24431DC113C32BEF00595BA7 /* ActivityDetails.m */,
 				24431DBD13C32BCC00595BA7 /* Activity.h */,
@@ -503,6 +508,7 @@
 				2490BD3913C1AB900014FB26 /* SmsConnection.m in Sources */,
 				24431DBF13C32BCC00595BA7 /* Activity.m in Sources */,
 				24431DC213C32BEF00595BA7 /* ActivityDetails.m in Sources */,
+				2402D18913C32F3600712D99 /* DbActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

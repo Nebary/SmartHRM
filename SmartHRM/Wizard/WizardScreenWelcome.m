@@ -3,7 +3,7 @@
 //  SmartHRM
 //
 //  Created by Nabi on 6/29/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Rus Wizards LLC. All rights reserved.
 //
 
 #import "WizardScreenWelcome.h"
