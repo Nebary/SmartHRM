@@ -8,72 +8,147 @@
 //
 
 #import "DbActivity.h"
+#import "Helpers.h"
+#import "SmartHRMAppDelegate.h"
+
+NSString * const ENTITY_ACTIVITY = @"Activity";
+NSString * const ENTITY_ACTIVITY_DETAILS = @"ActivityDetails";
+NSString * const SORT_ACTIVITY_START = @"ActivityStartTime";
+NSString * const SORT_ACTIVITY_ID = @"ActivityID";
+
+@interface DbActivity (Private)
+- (NSManagedObjectContext *)context;
+- (NSFetchRequest *)getRequestForEntity: (NSString *)entityRq sortBy: (NSString *)sort ascending: (BOOL)asc predicatedBy: (NSPredicate *)predicate;
+- (long long) nextActivityId;
+@end
 
 @implementation DbActivity
 
--(Activity*) insertActivity {
-    Activity *activity = (Activity *)[NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:managedObjectContext];
-    return activity;
+#pragma mark - Private methods
+
+- (NSManagedObjectContext *)context {
+    SmartHRMAppDelegate *appDelegate = (SmartHRMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    return [appDelegate managedObjectContext];
 }
 
--(void) removeActivity:(NSManagedObject *)activityToDelete {
-    [managedObjectContext deleteObject:activityToDelete];
-}
-
--(BOOL) commitChanges {
-    NSError *error;
-	if (![managedObjectContext save:&error]) {
-		// This is a serious error saying the record could not be saved.
-		// Advise the user to restart the application
-        return NO;
-	}
-    return YES;
-}
-
--(NSMutableArray*) fetchData {
+- (NSFetchRequest *)getRequestForEntity: (NSString *)entityRq sortBy: (NSString *)sort ascending: (BOOL)asc predicatedBy: (NSPredicate *)predicate {
     // Define our table/entity to use
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Activity" inManagedObjectContext:managedObjectContext];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:entityRq inManagedObjectContext:[self context]];
 	
 	// Setup the fetch request
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	[request setEntity:entity];
 	
 	// Define how we will sort the records
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"ActivityStartTime" ascending:NO];
-	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-	
-	[request setSortDescriptors:sortDescriptors];
-	[sortDescriptor release];
-	
-	// Fetch the records and handle an error
+	if (sort) {
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:sort ascending:asc];
+        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+        [request setSortDescriptors:sortDescriptors];
+        [sortDescriptor release];
+    }
+    
+    if (predicate) {
+        [request setPredicate:predicate];
+    }
+    
+    [request setReturnsObjectsAsFaults:NO];
+    
+    return request;
+}
+
+- (long long) nextActivityId {
+    long long result = 1;
+    
 	NSError *error;
-	NSMutableArray *mutableFetchResults = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+    NSFetchRequest *request = [self getRequestForEntity:ENTITY_ACTIVITY sortBy:SORT_ACTIVITY_ID ascending:YES predicatedBy:nil];
+	NSArray *allActivities = [[self context] executeFetchRequest:request error:&error];
+    NSUInteger count = [allActivities count];
+    if (count > 0) {
+        Activity *lastItem = [allActivities objectAtIndex:count-1];
+        result = [lastItem.ActivityID longLongValue]+1;
+    }
+    
+    return result;
+}
+
+#pragma mark - Activity
+
+- (Activity *) insertActivity {
+    long long nextId = [self nextActivityId];
+    
+    [[self context] setUndoManager:nil];
+    Activity *activity = [NSEntityDescription insertNewObjectForEntityForName:ENTITY_ACTIVITY inManagedObjectContext:[self context]];
+    activity.ActivityID = [NSNumber numberWithLongLong:nextId];
+    
+    return activity;
+}
+
+- (void) deleteActivity: (Activity *) entityToDelete {
+    [[self context] deleteObject:entityToDelete];
+}
+
+- (Activity *) selectActivity: (NSNumber *) activityId {
+    Activity *result = nil;
+	NSError *error;
+
+    NSFetchRequest *request = [self getRequestForEntity:ENTITY_ACTIVITY sortBy:nil ascending:NO predicatedBy:nil];
+	NSArray *allActivities = [[self context] executeFetchRequest:request error:&error];
+    
+    for (Activity *activity in allActivities) {
+        if ([activity.ActivityID isEqualToNumber:activityId]) {
+            result = activity;
+            break;
+        }
+    }
+    
+    return result;
+}
+
+- (NSArray *) selectActivitiesByDate: (NSDate *)date {
+    NSDate *start = [Helpers startOfTheDay:date];
+    NSDate *finish = [Helpers endOfTheDay:date];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(ActivityStartTime >= %@) AND (ActivityStartTime <= %@)", start, finish];
+
+    NSFetchRequest *request = [self getRequestForEntity:ENTITY_ACTIVITY sortBy:SORT_ACTIVITY_START ascending:NO predicatedBy:predicate];
 	
-	if (!mutableFetchResults) {
-		// Handle the error.
-		// This is a serious error and should advise the user to restart the application
-        return nil;
-	}
+	NSError *error;
+	NSArray *resultArray = [[self context] executeFetchRequest:request error:&error];
 	
-	// Save our fetched data to an array
-    //[self setEventArray: mutableFetchResults];
-	NSMutableArray *resultArray = [[NSMutableArray alloc] initWithArray: mutableFetchResults];
+	[request release];
+
+	if (!resultArray) return nil; else return resultArray;
+}
+
+#pragma mark - ActivityDetails
+
+- (ActivityDetails *) insertActivityDetails {
+    [[self context] setUndoManager:nil];
+    ActivityDetails *details = [NSEntityDescription insertNewObjectForEntityForName:ENTITY_ACTIVITY_DETAILS inManagedObjectContext:[self context]];
+    
+    return details;
+}
+
+- (void) deleteActivityDetails: (ActivityDetails *) entityToDelete {
+    [[self context] deleteObject:entityToDelete];
+}
+
+- (NSArray *) selectActivityDetails: (Activity *)activity {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"ALL Activity.ActivityID = %@", activity.ActivityID];
+    NSFetchRequest *request = [self getRequestForEntity:ENTITY_ACTIVITY_DETAILS sortBy:nil ascending:NO predicatedBy:predicate];
 	
-	[mutableFetchResults release]; 
+	NSError *error;
+	NSArray *resultArray = [[self context] executeFetchRequest:request error:&error];
+	
 	[request release];
     
-    return resultArray;
+	if (!resultArray) return nil; else return resultArray;
 }
 
--(Activity*) selectActivity:(NSNumber*) activityId {
-    return nil;
-}
+#pragma mark - Common methods
 
--(void) deleteActivity:(NSNumber*) activityId {
-}
-
--(void) updateActivity:(NSNumber*) activityId {
-
+- (void) commit {
+    SmartHRMAppDelegate *appDelegate = (SmartHRMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate saveContext];
 }
 
 @end

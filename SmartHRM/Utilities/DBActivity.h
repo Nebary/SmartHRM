@@ -9,22 +9,21 @@
 
 #import <Foundation/Foundation.h>
 #import "Activity.h"
-
+#import "ActivityDetails.h"
 
 @interface DbActivity : NSObject {
     
 }
 
-///Add new activity and return corresponding managed object to wotk with their fields.
--(Activity*) insertActivity;
-///Remove activity.
--(void) removeActivity:(NSManagedObject*) activityToDelete;
-///Commit all changes that were made by insertActivity and removeActivity methods.
--(BOOL) commitChanges;
--(NSMutableArray*) fetchData;
+- (Activity *) insertActivity;
+- (void) deleteActivity: (Activity *) entityToDelete;
+- (Activity *) selectActivity: (NSNumber *) activityId;
+- (NSArray *) selectActivitiesByDate: (NSDate *)date;
 
--(Activity*) selectActivity:(NSNumber*) activityId;
--(void) deleteActivity:(NSNumber*) activityId;
--(void) updateActivity:(NSNumber*) activityId;
+- (ActivityDetails *) insertActivityDetails;
+- (void) deleteActivityDetails: (ActivityDetails *) entityToDelete;
+- (NSArray *) selectActivityDetails: (Activity *)activity;
+
+- (void) commit;
 
 @end

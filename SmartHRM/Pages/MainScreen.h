@@ -42,6 +42,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *labelPageCaption03;
 
 - (IBAction)pageControlValueChanged:(id)sender;
+- (IBAction)clickStart:(id)sender;
 
 - (void) fillFrame;
 - (void) drawFrames;

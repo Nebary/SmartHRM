@@ -10,6 +10,14 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon_29x29.png</string>
+		<string>Icon_57x57.png</string>
+		<string>Icon_58x58.png</string>
+		<string>Icon_114x114.png</string>
+		<string>Icon_512x512.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.ruswizards.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

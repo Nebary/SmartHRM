@@ -11,6 +11,7 @@
 #import "Helpers.h"
 #import "WizardScreenWelcome.h"
 #import "Constants.h"
+#import "DbActivity.h"
 
 @implementation MainScreen
 
@@ -96,6 +97,9 @@
     [self drawGradient];
     [self placeViewsInScrollView];
     [self showWizard];
+
+    MKCoordinateRegion region = { {10.0, 10.0 }, { 20.0, 20.0 } };
+	[mapView setRegion:region animated:YES]; 
 }
 
 - (void)viewDidUnload
@@ -263,6 +267,28 @@
         nav.viewControllers = [NSArray arrayWithObjects:wizardWelcome, nil];
         [self presentModalViewController:nav animated:YES];
     }
+}
+
+- (IBAction)clickStart:(id)sender {
+    //Example for DbActivity use
+    DbActivity *db = [[DbActivity alloc] init];
+    
+    Activity *newActivity = [db insertActivity];
+    newActivity.Notes = @"Second activity";
+    newActivity.SyncID = @"1";
+    newActivity.UserID = @"1";
+    newActivity.ActivityStartTime = [NSDate date];
+    newActivity.Calories = [NSNumber numberWithInt:1];
+    
+    NSLog(@"%@", [db selectActivitiesByDate:[NSDate date]]);
+
+    newActivity = [db selectActivity:[NSNumber numberWithLongLong:3]];
+    if (newActivity) [db deleteActivity:newActivity];
+    
+    NSLog(@"%@", [db selectActivitiesByDate:[NSDate date]]);
+    
+    [db commit];
+    [db release];
 }
 
 @end

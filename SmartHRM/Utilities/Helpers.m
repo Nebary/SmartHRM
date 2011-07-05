@@ -41,4 +41,21 @@
     }
 }
 
++ (NSDate *) startOfTheDay: (NSDate *)date {
+    NSDateFormatter *fmt = [[[NSDateFormatter alloc] init] autorelease];  
+    [fmt setDateFormat:@"yyyy-MM-dd"];
+    NSString *dateString = [fmt stringFromDate:date];
+    return [fmt dateFromString:dateString];  
+    
+//    NSCalendar *calendar = [NSCalendar currentCalendar];
+//    NSUInteger flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+//    NSDateComponents* components = [calendar components:flags fromDate: date];
+//    return [calendar dateFromComponents:components];
+}
+
++ (NSDate *) endOfTheDay: (NSDate *)date {
+    NSDate *start = [Helpers startOfTheDay:date];
+    return [NSDate dateWithTimeInterval:(60*60*24)-1 sinceDate:start];
+}
+
 @end

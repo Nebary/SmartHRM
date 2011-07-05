@@ -20,4 +20,7 @@
 
 + (void) colorBlueAllLabelsInView: (UIView *)view;
 
++ (NSDate *) startOfTheDay: (NSDate *)date;
++ (NSDate *) endOfTheDay: (NSDate *)date;
+
 @end
